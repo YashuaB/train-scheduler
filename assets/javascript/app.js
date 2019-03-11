@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
-  var config = {
-    apiKey: "AIzaSyCe6Q9XTRg82qXbPgBuZe15pWbkY1_CXTE",
-    authDomain: "project-1-51592.firebaseapp.com",
-    databaseURL: "https://project-1-51592.firebaseio.com",
-    projectId: "project-1-51592",
-    storageBucket: "project-1-51592.appspot.com",
-    messagingSenderId: "568196330741"
-  };
+  // var config = {
+  //   apiKey: "AIzaSyCe6Q9XTRg82qXbPgBuZe15pWbkY1_CXTE",
+  //   authDomain: "project-1-51592.firebaseapp.com",
+  //   databaseURL: "https://project-1-51592.firebaseio.com",
+  //   projectId: "project-1-51592",
+  //   storageBucket: "project-1-51592.appspot.com",
+  //   messagingSenderId: "568196330741"
+  // };
 
   firebase.initializeApp(config);
 
