@@ -56,11 +56,11 @@ $("#submit").click(function(){
 
      
       $("#display").append(
-        ' <tr><td>' + newName +
-        ' </td><td>' + newDestination +
-        ' </td><td>' + newFrequency +
-        ' </td><td>' +  nextTrainConv +
-        ' </td><td>' + minTillArival + ' </td></tr>');
+        "<tr><td>" + newName +
+        "</td><td>" + newDestination +
+        "</td><td>" + newFrequency +
+        "</td><td>" + nextTrainConv +
+        "</td><td>" + minTillArival + "</td></tr>")
       
     })
 })
