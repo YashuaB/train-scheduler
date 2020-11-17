@@ -13,12 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
   <script src="assets/javascript/app.js"></script>
-
-
-
-
-
-
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
@@ -26,29 +21,44 @@
 
   <div class="container">
 
-    <br>
+    <nav class="navbar nav-bck">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/pngegg.png" width="30" height="30" class="d-inline-block align-top " alt="" loading="lazy">
+        Schedule your next trip
+      </a>
+    </nav>
 
-
-    <div class="jumbotron">
-      <h1 class="text-center">Train Scheduler</h1>
-      <h3 class="text-center"></h3>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="text-center">
-              <strong></strong></h3>
-          </div>
+    
+   
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assets/images/train-sch-img.jpg" class="d-block w-100 header-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/train-sch-img2nd.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/train-sch-img3rd.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
     </div>
 
+   <div class="row">
+     <div class="col-lg-9 overlay">
+      <h3 class="display-4">Train Scheduler</h3>
+      <p class="lead">All aboard!</p>
+     </div>
+   </div>
+        
+
 
     <div class="row">
       <div class="col-lg-12">
         <div class="card">
+          <div class="card-header">
+            Daily Train Schedule
+          </div>
           <div class="card-body">
             <div class="row">
               <table class="table">
@@ -76,28 +86,28 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-header">
-            Add Train
+            Add Train - Conductor Manual Input
           </div>
           <div class="card-body">
             <form>
               <div class="form-group row">
-                <label for="train">Train</label>
+                <label for="train"><strong>Train Name:</strong></label>
                 <input class="form-control" id="train-input" type="text">
               </div>
               <div class="form-group row">
-                <label for="travel">Destination</label>
+                <label for="travel"><strong>Destination:</strong></label>
                 <input class="form-control" id="destination-input" type="text">
               </div>
               <div class="form-group row">
-                <label for="train-time">First Train Time(HH:MM miltary time)</label>
+                <label for="train-time"><strong>First Train Time (HH:MM miltary time):</strong></label>
                 <input class="form-control" id="train-time-input" type="text">
               </div>
               <div class="form-group row">
-                <label for="frequency">Frequency</label>
+                <label for="frequency"><strong>Frequency:</strong></label>
                 <input class="form-control" id="frequency-input" type="number">
               </div>
 
-              <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+              <button class="btn main-btn-color" id="submit" type="submit">Submit</button>
             </form>
           </div>
         </div>
